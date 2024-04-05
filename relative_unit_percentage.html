@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Relative Unit: Percentage(%)</title>
+    <style>
+        #first{
+            background-color: aqua;
+            height: 100px;
+            width: 130px;
+        }
+        #second{
+            background-color: blueviolet;
+            height: 30%;
+            width: 50%; /*-->here % is relative to parent div i.e. #second box size depend upon the parent size, i.e. width = 50% of parent's width*/
+        }
+    </style>
+</head>
+<body>
+    <div id="first">first 
+        <div id="second">second</div>
+    </div>
+</body>
+</html>

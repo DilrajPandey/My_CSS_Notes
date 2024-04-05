@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Relative Unit: em(Font-size)</title>
+    <style>
+        *{
+            font-size: 50px;
+        }
+        #first{
+            background-color: aqua;
+            height: 100px;
+            width: 130px;
+            font-size: 15px;
+        }
+        #second{
+            background-color: blueviolet;
+            height: 30%;
+            width: 70%; 
+            font-size: 2em; /*-->here em is font-size relative to parent div i.e. #second box font-size depend upon the parent font-size, i.e. font-size = 2em that means 2 times of parent's font-size*/
+        }
+    </style>
+</head>
+<body>
+    Body
+    <div id="first">first 
+        <div id="second">second</div>
+    </div>
+</body>
+</html>

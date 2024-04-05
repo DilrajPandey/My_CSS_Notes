@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex Shrink</title>
+    <style>
+        .container{
+            height: 250px;
+            width: 300px;
+            border: 1px solid;
+            background-color: bisque;
+            display: flex;
+
+        }
+        .box{
+            margin: 5px;
+            height:80px;
+            width: 80px; /*--> at this stage the size of box is larger than the container but there is no change in the box size after a point , but if we want any specific box to shrink more or less then we use flex-shrink in their personal box */
+
+        }
+        #box1{
+            background-color: blue;
+        }
+        #box2{
+            background-color: brown;
+            /* we will use box2 for shrinking the box */
+
+            /* flex-shrink: 1;  --> default value(1) which means no change */
+
+            /* flex-shrink: 2; --> 2 means that box 2 will shrinks twice(2 times) the other boxes*/
+
+            /* flex-shrink: 0.5; --> 0.5 means shrinks 0.5 less times than the other boxes*/
+
+            flex-shrink: 0; /*--> 0 means no shrinks at all for this box*/
+        }
+        #box3{
+            background-color: aqua;
+        }
+        #box4{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Container</h1>
+    <div class="container">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+    </div>
+</body>
+</html>

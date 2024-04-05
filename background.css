@@ -1,0 +1,13 @@
+/*Background tags works in body tag 
+
+*/
+body{
+    background-image: url("wallpaper/earth.jpg");
+    background-size: cover; /* perfect fit according to screen size */
+/*  background-size: auto;    //auto= as it is in the beginning
+    background-size: 500px;   //500px= specific size (repetive in x & y axis)
+    background-size: auto;
+
+
+*/
+}

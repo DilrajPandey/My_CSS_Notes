@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex Grow</title>
+
+    <!-- Same as flex shrink but the default value is 0 not 1-->
+
+    <style>
+        .container{
+            height: 250px;
+            width: 300px;
+            border: 1px solid;
+            background-color: bisque;
+            display: flex;
+
+        }
+        .box{
+            margin: 5px;
+            height:40px;
+            width: 40px; /*--> at this stage the size of box is smaller than the container, but if we want any specific box to grow more or less then we use flex-grow in their personal box(for personal use specifically) and in allbox(for all boxes) */
+
+        }
+        #box1{
+            background-color: blue;
+        }
+        #box2{
+            background-color: brown;
+            /* we will use box2 for shrinking the box */
+
+            /*flex-grow: 0;  --> default value(0) which means no change */
+
+           /* flex-grow: 1; --> 1 means that box 2 will grow maximum to the other boxes*/
+
+            flex-grow: 0.5; /*  --> 0.5 means grows 0.5 more times(50% more) than the other boxes*/
+
+        }
+        #box3{
+            background-color: aqua;
+        }
+        #box4{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Container</h1>
+    <div class="container">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+    </div>
+</body>
+</html>

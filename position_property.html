@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Position Property</title>
+    <!-- z-index: 2;   level of page up or down
+                       2 means 2 page up(out of the page)
+                       starts from 0
+                       -ve means page down
+                       applicable on relative,absolute,fixed or sticky property
+                       not applicable on static
+                       accepts integer value-->
+    <style>
+        .box{
+            margin: 10px;
+            height: 70px;
+            width: 70px;
+            background-color: aqua;
+            border: 2px solid blueviolet;
+        }
+        #Static{
+            position: static; /*-->default value  */
+        }
+        #relative{
+            position: relative; /*-->relative to default value(shift w.r.t. original position)  */
+            top: 20px;
+            left: 90px;
+        }
+        #absolute{
+            position: absolute; /*-->gets out of the page(sabse ouper, apna space b nai lega page me)  */
+            top: 40px;  /*-->40px up from body(used in overlapping)*/
+        }
+        #fixed{
+            position: fixed; /*-->will not move with page, fixed with position(similar to absolute it also gets page up but fixed) */
+            left: 90px;
+        }
+        </style>
+</head>
+<body>
+    <div id="Static" class="box">Static</div>
+    <div id="relative" class="box">relative</div>
+    <div id="absolute" class="box">absolute</div>
+    <div id="fixed" class="box">fixed</div>
+    <!-- fake boxes just to make it scrorable and to understand -->
+    <div class="box">fake boxes</div>
+    <div class="box">fake boxes</div>
+    <div class="box">fake boxes</div>
+    <div class="box">fake boxes</div>
+    <div class="box">fake boxes</div>
+    <div class="box">fake boxes</div>
+    <div class="box">fake boxes</div>
+    <div class="box">fake boxes</div>
+    <div class="box">fake boxes</div>
+    <div class="box">fake boxes</div>
+</body>
+</html>

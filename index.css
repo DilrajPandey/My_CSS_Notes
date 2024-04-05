@@ -1,0 +1,18 @@
+h1{
+    color: rgba(0, 128, 0,1);
+    background-color: yellow;
+} 
+p{
+    color: blueviolet;
+}
+ 
+#first{ /*-----> id selected with # */
+    color: aqua;
+    background-color: black;
+}
+.second{  /*-----> class selected with .(dot) */ 
+    color: brown;
+}
+/* h1,h2,h3,#para{  /*------> style multiple element simultaneously */ /*
+    color: cornflowerblue;
+} */

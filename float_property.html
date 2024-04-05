@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Float Property</title>
+    <!-- (not commonly used, use flexbox instead) -->
+    <style>
+        .container{
+            height: 120px;
+            width: 300px;
+            border: 1px solid;
+        }
+        .box{
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+        }
+        #box1{
+            background-color: blue;
+            float: left;  /*-->dicides the location of box within the contaier(float left or right)*/
+        }
+        #box2{
+            background-color: brown;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+    </div>
+</body>
+</html>

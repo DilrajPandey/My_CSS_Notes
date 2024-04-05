@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Margin and padding</title>
+    <style>
+        *{
+            box-sizing: border-box; /*--->set all(padding,border) according to the size given(200px 200px in this case)*/  
+        }
+        #first{  
+            height: 200px;
+            width: 200px;
+            padding: 10px 20px 25px 30px; /*--->(1-after content)decides seperation b/w content and border(values are clockwise top-right-bottom-left) */
+            border: 10px solid purple;  /*--->(2-after padding)decides seperation b/w padding and margin */
+            margin: 10px 15px 20px 25px;  /*--->(3-after border)decides how much seperation it needed with other element(values are clockwise)  */
+            color: aqua;
+            background-color: blue;
+            
+        }
+        #second{
+            height: 200px;
+            width: 200px;
+            border: 6px dashed blue;  /*--->border width, border style, border color */
+            border-radius: 15px 50px 15px 15px;  /*--->curve the border(left up corner,right up, right down, left down), you can also use % for all(eg. 50% to make border circle) */
+            color: rgb(29, 43, 8);
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="first" class="same">first</div>
+    <div id="second" class="same">second</div>
+    
+    
+</body>
+</html>

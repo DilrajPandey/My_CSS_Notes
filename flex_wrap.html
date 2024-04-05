@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex Wrap</title>
+    <style>
+        .container{
+            height: 350px;
+            width: 300px;
+            border: 1px solid;
+            background-color: bisque;
+            display: flex;
+
+            /* flex-wrap: nowrap; -->default */
+            flex-wrap: wrap;  /*--> IT HOLDS ALL THE BOXES INSIDE THE CONTAINER ACCORDING TO THEIR SIZE(iski responsibility h ki sare boxes yae andar rakhe) Top to Bottom*/
+
+            /* flex-wrap: wrap-reverse; --> do same as wrap but from bottom to top*/
+        }
+        .box{
+            margin: 5px;
+            height:80px;
+            width: 80px; /*--> at this stage the size of box is larger than the container but there is no change in the box size after a point to overcome this we use flex-wrap in the container box */
+
+            
+        }
+        #box1{
+            background-color: blue;
+            
+        }
+        #box2{
+            background-color: brown;
+        }
+        #box3{
+            background-color: aqua;
+        }
+        #box4{
+            background-color: cadetblue;
+        }
+        /* flex-items(boxes inside the flexbox) will shrinks automatically if there size become large. If the size of inside boxes became larger then flexbox will handle it to be inside it's boundry(i.e. after a time the size will not matter for flexbox) */
+    </style>
+</head>
+<body>
+    <h1>Flex Container</h1>
+    <div class="container">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+    </div>
+</body>
+</html>

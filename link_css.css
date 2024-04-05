@@ -1,0 +1,36 @@
+h1{ /* ----> h1 = Selector*/
+    color: orange;  /*-----> orange = value   */
+    background-color: darkgreen;
+    border: 6px solid blue;  
+} /*  |   */
+/*    |
+   color = property
+   
+ you can use #fff(3digit_code) for background color
+   where 1st f= full red (range: 0 to 9 and a to f[after 9, its a]) 
+         2nd f= full green (range: 0 to 9 and a to f[after 9, its a])
+         3rd f= full blue (range: 0 to 9 and a to f[after 9, its a])
+
+/you can also make more colors my combination of these f's
+/Acctually there is 6 digit_code(ffffff) but we use only 3 for comfortness
+   */
+
+/*You can use rgb(x,x,x) code in color or in background-color
+   1st x= red {range= 255,255,255} 
+   2nd x= green {range= 255,255,255} 
+   3rd x= blue {range= 255,255,255} 
+
+  /you can also make more colors my combination of these x's
+*/
+
+/*You can use rgba(x,x,x,y) code in color or in background-color
+   here a in rgba= alpha
+   y= opacity(transparency) {range= 0 to 1}
+
+*/
+
+h2{
+    color: rgb(55, 74, 243);
+    background-color: #a76;
+    border: 5px solid blue;
+}

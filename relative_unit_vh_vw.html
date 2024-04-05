@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Relative Unit: vh/vw(Any property of root or parent element)</title>
+    <!-- vh/vw: based on the screen size, it will shrink or expand
+        vh = height of screen
+        vw = widdth of screen -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0px;
+        }
+        #first{
+            background-color: aqua;
+            height: 50vh; /*-->take 50% of height of screen size */
+            width: 50vw; /*-->take 50% of width of screen size*/
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">first</div>
+</body>
+</html>

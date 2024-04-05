@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox Direction</title>
+    <!-- flexbox property: works in x(main-axis) or y(cross-axis) direction not gridwise 
+                           one-dimentional layout i.e. rows or columns
+                           -->
+    <style>
+        .container{
+            height: 350px;
+            width: 300px;
+            border: 1px solid;
+            background-color: bisque;
+            display: flex;
+            /* flex-direction: row;  --> boxes will be placed row wise(default)
+
+            flex-direction: row-reverse; --> boxes will be placed reverse-row wise
+
+            flex-direction: column;  --> boxes will be placed column wise*/
+
+            /*flex-direction: column-reverse; --> boxes will be placed reverse-column wise*/
+
+            /*justify-content: flex-start; default*/
+
+            justify-content: flex-end; /*-->end of x-axis*/
+
+            justify-content: center; /*-->center of x-axis*/
+
+            justify-content: space-between; /*-->no space in corners..max space in between boxes , corner boxes placed at corners, center boxes in center.... of x-axis(space in between)*/
+
+            justify-content: space-around; /*corner space: 1, between space: 2*/
+
+            justify-content: space-evenly; /*corner space = between space*/
+        }
+        .box{
+            margin: 5px;
+            height:70px;
+            width: 70px;
+        }
+        #box1{
+            background-color: blue;
+            
+        }
+        #box2{
+            background-color: brown;
+        }
+        #box3{
+            background-color: aqua;
+        }
+        #box4{
+            background-color: cadetblue;
+        }
+        /* flex-items(boxes inside the flexbox) will shrinks automatically if there size become large. If the size of inside boxes became larger then flexbox will handle it to be inside it's boundry(i.e. after a time the size will not matter for flexbox) */
+    </style>
+</head>
+<body>
+    <h1>Flex Container</h1>
+    <div class="container">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+    </div>
+</body>
+</html>

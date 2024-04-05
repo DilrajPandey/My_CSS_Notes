@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Property</title>
+    <style>
+        .container{
+            margin: 20px;
+            border: 1px solid black;
+            height: 500px;
+            width: 1000px;
+            background: white;
+            padding: 50px;
+            /* display: flex; ---> set the box in rows or columns*/
+            display: grid; /* -->display the content gridwise*/
+            justify-content: center;   /*-->justify is used to place/move the content horizontaly(used only after display property is applied) */
+            
+            /* align-content: end;   -->align is used to place/move the content vertically(used only after display property is applied) */
+
+            align-content: space-evenly; /*---> it describes the gap b/w the boxes within the container vertically(use justify-content for horizontal)*/
+        }
+        .samebox{
+            height: 150px;
+            width: 140px;
+            border: 2px solid blue;
+            display: grid;
+            justify-items: center;  /*  ---> items: works on the content inside the boxes(eg. Box1,Box2) giving them there own equal space*/
+            align-items: center;  /*  ---> items: works on the content inside the boxes(eg. Box1,Box2) */
+
+            /* You can also use justify-content---> works on the content inside the boxes(eg. Box1,Box2) alligning all the content in the center*/
+
+            /* justify-self: center; -->override the justify-content, self property is used in the main content box not the container box */
+
+            /* align-self: center; -->override the align-content, self property is used in the main content box not the container box */
+
+            /* PRIORITY: align-self > align-content,  justify-self > justify-content */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="samebox">Box1</div>
+        <div id="box2" class="samebox">Box2</div>
+        
+        
+    </div>
+</body>
+</html>
