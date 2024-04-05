@@ -1,0 +1,40 @@
+<!-- Block Element: starts from new line(takes the whole line) 
+                    Can have margin and padding
+                    width and height can be set
+                eg. <div>, <p>, <h1>, <ul>, <li> etc
+
+    Inline element: Stays in the line(next element can start just after it finishes)
+                    limited styling(can't set size easily)
+                eg. <span>, <a>, <button> etc.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display Property</title>
+    <style>
+        .box{
+            height: 60px;
+            width: 80px;
+            background-color: brown;
+            margin: 5px;
+            border: 2px solid black;
+            /* display: block;--->by default b yahi hota h, isse element different line me hote h hamesha*/
+
+            /* display: inline;---> elements single line me aa jaienge but height and width kaam nai karengi ---> to prevent this we use inline-block*/
+
+            display: inline-block; /* --->element will be in a single line but use property of block to use height and width */
+        }
+        #box1{
+            /* visibility: hidden; ---> sirf dikega nai but space lega*/
+
+            /* display: none; ---> box1 will gets deleted(na display hoga na space lega)*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+</body>
+</html>

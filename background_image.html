@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Background Image</title>
+    <style>
+        #icon {
+            height: 50px;
+            width: 60px;
+            background-image: url(flipkart.png); /* by url(relative local path) */
+            background-size: contain; /* as the size of original image is very big n given height and width is less so to make it fit we use bg-size: contain */
+            background-repeat: no-repeat; /* if we use bg-size then it may repeat the image in given height and width so to avoid this repetition we use bg-repeat to no repeat, we can also set it to repeat in x or y direction */
+            background-position: top; /* rightnow it wodn't affect, if only affects if the container is bigger then the size of the image(check MDN reference for more details) */
+            background-attachment: scroll; /* Scroll within the image*/
+        }
+    </style>
+</head>
+<body>
+    <div id="icon"></div>
+    
+    
+</body>
+</html>
