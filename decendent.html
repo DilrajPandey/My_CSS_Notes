@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Decendent</title>
+    <!-- Decendent: element inside element...... can also be styled -->
+
+    <style>
+        div p{  /*----> p(para tag): inside the div is styled by space b/w them(p is decendent of div tag having id = #first, you can also use id instead of div here)  */
+            color: blue;
+        }
+        p{  /*----> p(para tag): normal para tag which is not inside any div */
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">  <!-- para tag is inside div tag -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, cumque.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    
+</body>
+</html>
